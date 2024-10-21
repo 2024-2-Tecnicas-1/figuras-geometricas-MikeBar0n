@@ -11,14 +11,14 @@ public class Circulo extends FiguraGeometrica{
     }
     
     //Complejidad: O(1) tiempo constante.
-    public double obtenerArea(double radio){
-        double area = Math.PI*Math.pow(radio, 2);
-        return area;
+    @Override
+    public double obtenerArea(){
+        return Math.PI*Math.pow(radio, 2);
     }
     
     //Complejidad: O(1) tiempo constante.
-    public double obtenerPerimetro(double radio){
-        double perimetro = (2*Math.PI)*radio;
-        return perimetro;
+    @Override
+    public double obtenerPerimetro(){
+        return (2*Math.PI)*radio;
     }
 }

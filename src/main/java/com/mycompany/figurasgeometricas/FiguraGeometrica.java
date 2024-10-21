@@ -1,6 +1,6 @@
 package com.mycompany.figurasgeometricas;
 
-class FiguraGeometrica {
+abstract class FiguraGeometrica {
     private String nombre;
     private String color;
     
@@ -31,14 +31,8 @@ class FiguraGeometrica {
     }
     
     //Complejidad: O(1) tiempo constante.
-    public double obtenerArea(){
-        double area = 0;
-        return area;
-    }
+    public abstract double obtenerArea();
     
     //Complejidad: O(1) tiempo constante.
-    public double obtenerPerimetro(){
-        double perimetro = 0;
-        return perimetro;
-    }
+    public abstract double obtenerPerimetro();
 }

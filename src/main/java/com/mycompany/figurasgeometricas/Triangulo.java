@@ -1,26 +1,25 @@
-
 package com.mycompany.figurasgeometricas;
 
-public class Rectangulo extends FiguraGeometrica{
-    private int lado1;
-    private int lado2;
+public class Triangulo extends FiguraGeometrica{
+    private int base;
+    private int altura;
     
     //Complejidad: O(1) tiempo constante.
-    public Rectangulo(String nombre, String color, int lado1, int lado2){
+    public Triangulo(String nombre, String color, int base, int altura) {
         super(nombre, color);
-        this.lado1 = lado1;
-        this.lado2 = lado2;
+        this.base = base;
+        this.altura = altura;
     }
     
     //Complejidad: O(1) tiempo constante.
     @Override
     public double obtenerArea(){
-        return lado1*lado2;
+        return (base*altura)/2;
     }
     
     //Complejidad: O(1) tiempo constante.
     @Override
     public double obtenerPerimetro(){
-        return lado1*2 + lado2*2;
+        return base*3;
     }
 }
